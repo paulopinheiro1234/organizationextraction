@@ -4,7 +4,6 @@ import net.sourceforge.tess4j.Tesseract;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.rendering.PDFRenderer;
 import org.apache.poi.ss.usermodel.*;
-import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
 import java.awt.image.BufferedImage;
@@ -33,7 +32,7 @@ public class AtlasExtractorNovo {
         try (PDDocument document = PDDocument.load(new File(pdfPath))) {
             PDFRenderer pdfRenderer = new PDFRenderer(document);
             Tesseract tesseract = new Tesseract();
-            tesseract.setDatapath("C:\\Programas\\Tesseract-OCR\\tessdata");
+            tesseract.setDatapath("C:\\Users\\BERNARDO\\Documents\\tesseract-5.5.1\\tessdata");
             tesseract.setLanguage("por+eng");
             tesseract.setPageSegMode(1);
             tesseract.setTessVariable("tessedit_char_whitelist",
