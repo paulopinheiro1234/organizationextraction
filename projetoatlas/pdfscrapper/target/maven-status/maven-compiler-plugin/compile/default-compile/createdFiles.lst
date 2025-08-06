@@ -1,2 +1,4 @@
-pdf\scrapper\AtlasExtractorNovo$Centro.class
+pdf\scrapper\Centro.class
+pdf\scrapper\ExcelWriter.class
+pdf\scrapper\ExtratorController.class
 pdf\scrapper\AtlasExtractorNovo.class
